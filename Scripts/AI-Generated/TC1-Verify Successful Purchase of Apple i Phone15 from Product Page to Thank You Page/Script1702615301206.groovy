@@ -1,7 +1,7 @@
-import com.kms.katalon.core.model.FailureHandling
+import com.katalon.truetest.select.Select as Select
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import internal.GlobalVariable as GlobalVariable
-import com.katalon.truetest.select.Select as Select
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 'Initialize test session: Open browser and set view port'
@@ -408,7 +408,7 @@ WebUI.verifyMatch(WebUI.getUrl(), '.*/checkout/payment/?(?:#.*)?(?:\\?.*)?$', tr
 
 WebUI.enhancedClick(testObj)
 
-'step 30: At Page checkout payment click on button object --> navigate to Page thank-youdef6ac4-368a-41d0-8baf-4b93af736d03'
+'step 30: At Page checkout payment click on button object --> navigate to Page thank-youdd7863f-0b50-437f-9f15-4357e542f726'
 
 testObj = findTestObject('AI-Generated/Page_checkout_payment/button_object')
 
@@ -422,9 +422,9 @@ WebUI.verifyMatch(WebUI.getUrl(), '.*/checkout/payment/?(?:#.*)?(?:\\?.*)?$', tr
 
 WebUI.enhancedClick(testObj)
 
-'step 31: Add visual checkpoint at Page thank-youdef6ac4-368a-41d0-8baf-4b93af736d03'
+'step 31: Add visual checkpoint at Page thank-youdd7863f-0b50-437f-9f15-4357e542f726'
 
-WebUI.takeFullPageScreenshotAsCheckpoint('TestCase-00001_visual_checkpoint')
+WebUI.takeFullPageScreenshotAsCheckpoint('TC1-Verify Successful Purchase of Apple i Phone15 from Product Page to Thank You Page_visual_checkpoint')
 
 'Terminate test session: Close browser'
 
